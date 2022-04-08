@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #222f3e;
+}
+.sectionBase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleHome{
+    margin: 0;
+    font-size: 4rem;
+    color: #8395a7;
+    text-shadow: 0 0 5px #000;
+}
+.subtitleHome{
+    margin: 0;
+    color: #8395a7;
+    font-size: 1.7rem;
+}
+.menu{
+    display: flex;
+    position: fixed;
+}
+.iconHome{
+    color: #c8d6e5;
+    margin: 10px;
+}
+.linkMenu{
+    color: #c8d6e5;
+    text-decoration: none;
+}
+.displayNone{
+    opacity: 0;
+}
+.displayBlock{
+    opacity: 1;
+    animation: tada;
+    animation-duration: 2s;
+}
+@keyframes hiAnimation {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(100deg);
+        background: #222f3e;
+    }
+}
+.handAnimation{
+    display: inline-block;
+
+}
+@media only screen and (min-width: 970px){
+    .iconAbout{
+        margin: 3px;
+    }
+    .iconAbout:nth-child(even){
+        animation: flipInY;
+        animation-duration: 1s;
+    }
+    .iconAbout:nth-child(odd){
+        animation: flipInY;
+        animation-duration: 2s;
+    }
+    .desktopNone{
+        display: none;
+    }
+    .titleHome{
+        font-size: 5rem;
+    }
+}
